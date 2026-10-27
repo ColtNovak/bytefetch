@@ -3,7 +3,7 @@
 The smallest fetch tool*, written as a shell script with no dependencies.
 
 *It is the smallest for the amount of features it has. It is 721 bytes, which is smaller than this readme.
-
+(I have yet to find any fetch tools smaller than mine, I am fairly sure there are none on github) 
 ```
     .--.     user@arch
    |o_o |    os     Arch Linux
