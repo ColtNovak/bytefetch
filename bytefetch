@@ -1,0 +1,18 @@
+#!/bin/sh
+. /etc/os-release
+cd /var;LC_ALL=C;set -- l*/pa*/l*/[!A]* l*/dp*/i*/*.l* db/x*/.*s.plist db/p*/*/*;[ $# = 4 ]||p=$(($#-3))
+cd /proc/sys/kernel;read h<hostname;read k<osrelease;cd ../..
+IFS=. read u _<uptime;{ read _ t _;read _;read _ m _;}<meminfo
+while IFS=: read a c;do case $a in *l?n*)break;esac;done<cpuinfo
+read s<$PPID/stat;set -- ${s#*)};read e<$2/comm
+o="    .--.;$USER@$h;;
+   |o_o |;os;$PRETTY_NAME;
+   |:_/ |;kernel;$k
+  //   \ \;uptime;$((u/86400))d $((u/3600%24))h $((u/60%60))m
+ (|     | );pkgs;$p;
+/'\_   _/\`\;shell;${SHELL##*/};
+\___)=(___/;de;$XDG_CURRENT_DESKTOP;
+ ;term;$e;
+ ;cpu;${c# };
+ ;memory;$(((t-m)>>10))/$((t>>10)) MiB";IFS=';
+';printf "\33[${ANSI_COLOR:-34}m%-13s%-7s\33[m%s\n" $o
