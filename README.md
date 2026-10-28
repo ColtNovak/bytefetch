@@ -16,8 +16,7 @@ The worlds smallest fetch tool*, written as a shell script with no dependencies.
              cpu    AMD Ryzen 5 7535HS with Radeon Graphics
              memory 7651/31387 MiB
 ```
-## Why would you use this?
-Most fetch tools call uname, awk or grep. This one is different since it only reads files the kernel already provides.
+
 ## install
 
     install -Dm755 bytefetch ~/.local/bin/bytefetch
