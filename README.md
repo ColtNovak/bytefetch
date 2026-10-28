@@ -2,7 +2,7 @@
 
 The worlds smallest fetch tool*, written as a shell script with no dependencies.
 
-*the smallest **dependency free**  script (for the amount of information is collects) . It is 721 bytes, which is smaller than this readme.
+*It is the smallest **dependency free**  script (for the amount of information is collects) . It is 721 bytes, which is smaller than this readme.
 (I have yet to find any fetch tools smaller than mine) 
 ```
     .--.     user@arch
