@@ -1,8 +1,8 @@
 # bytefetch
 
-The smallest fetch tool*, written as a shell script with no dependencies.
+The worlds smallest fetch tool*, written as a shell script with no dependencies.
 
-*It is the smallest for the amount of features it has. It is 721 bytes, which is smaller than this readme.
+*It is the smallest **dependency free** fetch script (for the amount of information is collects) . It is 721 bytes, which is smaller than this readme.
 (I have yet to find any fetch tools smaller than mine, I am fairly sure there are none on github) 
 ```
     .--.     user@arch
