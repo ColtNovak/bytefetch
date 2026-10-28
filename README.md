@@ -18,8 +18,10 @@ The worlds smallest fetch tool*, written as a shell script with no dependencies.
 ```
 
 ## install
-
-    install -Dm755 bytefetch ~/.local/bin/bytefetch
+### aur
+``yay -S bytefetch``'
+### source
+``install -Dm755 bytefetch ~/.local/bin/bytefetch``
 
 ## notes
 - Linux only
